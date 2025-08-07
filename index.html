@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jane Doe | Web Developer & Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            background: #fff;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 40px 32px 32px 32px;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(52, 152, 219, 0.13);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 24px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #3498db;
+            box-shadow: 0 2px 12px rgba(52,152,219,0.08);
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info h1 {
+            margin: 0 0 8px 0;
+            font-size: 2.2rem;
+            color: #222;
+        }
+        .profile-info h2 {
+            margin: 0 0 16px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #3498db;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-list li {
+            margin-bottom: 6px;
+            color: #444;
+        }
+        .section {
+            margin-top: 36px;
+        }
+        .section-title {
+            color: #3498db;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            letter-spacing: 0.5px;
+        }
+        .about-me {
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        .skills-list, .education-list, .experience-list {
+            list-style: disc inside;
+            color: #444;
+            margin: 0;
+            padding-left: 18px;
+        }
+        .skills-list li, .education-list li, .experience-list li {
+            margin-bottom: 8px;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .social-links a:hover {
+            color: #217dbb;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .profile-container {
+                padding: 18px 6px;
+            }
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+            }
+            .profile-pic {
+                width: 110px;
+                height: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h1>Jane Doe</h1>
+                <h2>Web Developer &amp; Designer</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> jane.doe@email.com</li>
+                    <li><strong>Phone:</strong> +1 234 567 8901</li>
+                    <li><strong>Location:</strong> New York, USA</li>
+                    <li><strong>Website:</strong> <a href="https://janedoe.dev" target="_blank">janedoe.dev</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">About Me</h3>
+            <p class="about-me">
+                I am a passionate web developer and designer with over 5 years of experience creating responsive, user-friendly websites and web applications. My expertise spans front-end and back-end development, UI/UX design, and modern JavaScript frameworks. I thrive on solving complex problems and delivering high-quality digital solutions.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Skills</h3>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+), TypeScript</li>
+                <li><strong>Frameworks:</strong> React, Vue.js, Node.js, Express</li>
+                <li><strong>Design:</strong> UI/UX Design, Figma, Adobe XD</li>
+                <li><strong>Tools:</strong> Git, Webpack, NPM, VS Code</li>
+                <li><strong>Other:</strong> Responsive Design, REST APIs, Agile Methodologies</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Experience</h3>
+            <ul class="experience-list">
+                <li>
+                    <strong>Senior Web Developer</strong> – Creative Studio (2021–Present)<br>
+                    Lead developer for multiple client projects, focusing on modern web technologies and performance optimization.
+                </li>
+                <li>
+                    <strong>Front-End Developer</strong> – Tech Solutions Inc. (2019–2021)<br>
+                    Built interactive UIs and collaborated with designers to enhance user experience.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <ul class="education-list">
+                <li>
+                    <strong>B.Sc. in Computer Science</strong>, XYZ University (2015–2019)<br>
+                    Graduated with Honors. Relevant coursework: Web Development, Human-Computer Interaction, Algorithms.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Social Links</h3>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/janedoe" target="_blank">LinkedIn</a>
+                <a href="https://github.com/janedoe" target="_blank">GitHub</a>
+                <a href="https://twitter.com/janedoe" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html></div></p>
