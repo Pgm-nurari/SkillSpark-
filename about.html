@@ -1,10 +1,9 @@
-
-<!-- index.html (Homepage) -->
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jane Doe | Home</title>
+    <title>Jane Doe | About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <style>
@@ -46,42 +45,47 @@
         .nav-links a:hover {
             color: #e0eafc;
         }
-        .banner {
-            width: 100%;
-            height: 260px;
-            background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .banner-text {
-            background: rgba(255,255,255,0.85);
-            padding: 32px 48px;
+        .about-section {
+            max-width: 700px;
+            margin: 48px auto 0 auto;
+            background: #fff;
             border-radius: 18px;
             box-shadow: 0 4px 24px rgba(52, 152, 219, 0.13);
-            text-align: center;
+            padding: 36px 28px;
+            display: flex;
+            align-items: center;
+            gap: 36px;
         }
-        .banner-text h1 {
-            margin: 0 0 12px 0;
-            font-size: 2.5rem;
+        .about-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+            box-shadow: 0 2px 12px rgba(52,152,219,0.08);
+        }
+        .about-info {
+            flex: 1;
+        }
+        .about-info h2 {
+            margin: 0 0 10px 0;
             color: #3498db;
+            font-size: 2rem;
         }
-        .banner-text p {
-            margin: 0;
+        .about-info p {
             color: #333;
-            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 0;
         }
         @media (max-width: 700px) {
-            .banner-text {
-                padding: 18px 12px;
-            }
-            .banner {
-                height: 160px;
-            }
-            .nav-container {
+            .about-section {
                 flex-direction: column;
-                height: auto;
-                padding: 12px 0;
+                gap: 18px;
+                padding: 18px 8px;
+            }
+            .about-pic {
+                width: 90px;
+                height: 90px;
             }
         }
     </style>
@@ -97,11 +101,13 @@
             </div>
         </div>
     </nav>
-    <div class="banner">
-        <div class="banner-text">
-            <h1>Welcome!</h1>
-            <p>I'm Jane Doe, a passionate Web Developer & Designer.<br>
-            Explore my work and get in touch!</p>
+    <div class="about-section">
+        <img src="profile.jpg" alt="Jane Doe" class="about-pic">
+        <div class="about-info">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Jane Doe, a web developer and designer based in New York. I love building beautiful, responsive websites and web apps that solve real problems. With 5+ years of experience, I specialize in JavaScript, React, and UI/UX design. When I'm not coding, you'll find me exploring art galleries or hiking.
+            </p>
         </div>
     </div>
 </body>

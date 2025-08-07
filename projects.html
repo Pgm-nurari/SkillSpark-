@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jane Doe | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+        }
+        nav {
+            background: #3498db;
+            padding: 0 24px;
+        }
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .nav-logo {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #e0eafc;
+        }
+        .projects-section {
+            max-width: 900px;
+            margin: 48px auto 0 auto;
+            padding: 0 12px;
+        }
+        .projects-title {
+            color: #3498db;
+            font-size: 2rem;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .projects-list {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(52,152,219,0.08);
+            padding: 28px 22px;
+            width: 270px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 18px;
+            transition: box-shadow 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 6px 24px rgba(52,152,219,0.18);
+        }
+        .project-title {
+            color: #222;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .project-desc {
+            color: #444;
+            font-size: 1rem;
+            margin: 0;
+        }
+        @media (max-width: 900px) {
+            .projects-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project-card {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Jane Doe</a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="projects-section">
+        <div class="projects-title">Projects</div>
+        <div class="projects-list">
+            <div class="project-card">
+                <div class="project-title">Portfolio Website</div>
+                <div class="project-desc">A personal portfolio built with React and styled-components, showcasing my work and skills.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">Task Manager App</div>
+                <div class="project-desc">A full-stack task management app using Node.js, Express, and MongoDB with a modern UI.</div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">E-commerce Landing Page</div>
+                <div class="project-desc">A responsive landing page for an online store, designed with Figma and implemented in HTML/CSS/JS.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
